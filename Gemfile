@@ -34,9 +34,9 @@
 
 source 'https://rubygems.org'
 
-gem 'rgeo-activerecord', '~> 5.0'
-gem 'mysql2', '>= 0.2.13'
-gem 'activerecord', '~> 5.0'
+gem 'rgeo-activerecord', '~> 6.0'
+gem 'mysql2', '~> 0.5.0'
+gem 'activerecord', '~> 6.0'
 
 group(:test) do
   gem 'rake', '>= 0.9.2'

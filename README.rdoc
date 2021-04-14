@@ -96,18 +96,18 @@ write more complex queries in SQL.
 
 === Installing The Adapter Gem
 
-This adapter has the following requirements:
+The current version of this adapter has the following requirements:
 
-* Ruby 1.9.3 or later.
+* Ruby 2.5 or later.
 * MySQL server 5.5 or later, or equivalent MariaDB, required for spatial extensions.
-* ActiveRecord 5.x.
-* mysql2 gem 0.4 or later.
-* rgeo 0.3.20 or later.
-* rgeo-activerecord 5.0 or later.
+* ActiveRecord 6.x.
+* mysql2 gem 0.5 or later.
+* rgeo 1.0.0 or later.
+* rgeo-activerecord 6.0 or later.
 
 Use the branch 'activerecord-4.2' for AR4.2 and mysql2 0.3.x.
-
 Use the branch 'activerecord-5.0' for AR5.0, AR5.1 and mysql2 0.3.x.
+Use the branch 'activerecord-5.2' for AR5.2 and mysql2 0.4.
 
 Install this adapter as a gem:
 
@@ -119,7 +119,7 @@ Install with bundler:
 
 Older versions can be used like this:
 
-  gem 'activerecord-mysql2spatial-adapter', github: 'fjl82/activerecord-mysql2spatial-adapter', branch: 'activerecord-4.2'
+  gem 'activerecord-mysql2spatial-adapter', github: 'fjl82/activerecord-mysql2spatial-adapter', branch: 'activerecord-5.2'
 
 See the README for the "rgeo" gem, a required dependency, for further
 installation information. The rgeo gem has some binary dependencies that

@@ -95,7 +95,7 @@ module ActiveRecord
           columns_ = []
           result_.each(symbolize_keys: true, as: :hash) do |field_|
             type_metadata = fetch_type_metadata(field_[:Type], field_[:Extra])
-            columns_ << SpatialColumn.new(field_[:Field], field_[:Default], type_metadata, field_[:Null] == 'YES', field_[:Collation], field_[:Extra])
+            columns_ << SpatialColumn.new(field_[:Field], field_[:Default], type_metadata, field_[:Null] == 'YES', collation: field_[:Collation])
           end
           columns_
         end

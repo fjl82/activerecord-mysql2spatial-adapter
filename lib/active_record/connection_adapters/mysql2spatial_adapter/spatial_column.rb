@@ -39,8 +39,8 @@ module ActiveRecord
     module Mysql2SpatialAdapter
       class SpatialColumn < ConnectionAdapters::MySQL::Column
 
-        def initialize(name_, default_, sql_type_metadata_ = nil, null_ = true, collation_ = nil, extra_ = '')
-          super(name_, default_, sql_type_metadata_, null_, collation_, false, extra_)
+        def initialize(name_, default_, sql_type_metadata_ = nil, null_ = true, collation: nil)
+          super(name_, default_, sql_type_metadata_, null_, collation: collation)
         end
 
       end

@@ -40,8 +40,7 @@
   spec.version = "#{::File.read('Version').strip}"
   spec.authors = ['Daniel Azuma', 'fjl82']
   spec.homepage = 'https://github.com/fjl82/activerecord-mysql2spatial-adapter'
-  spec.rubyforge_project = 'virtuoso'
-  spec.required_ruby_version = '>= 1.9.3'
+  spec.required_ruby_version = '>= 2.5.0'
   spec.files = ::Dir.glob('lib/**/*.rb') +
     ::Dir.glob('test/**/*.rb') +
     ::Dir.glob('*.rdoc') +
@@ -49,6 +48,7 @@
   spec.extra_rdoc_files = ::Dir.glob('*.rdoc')
   spec.test_files = ::Dir.glob('test/**/tc_*.rb')
   spec.platform = ::Gem::Platform::RUBY
-  spec.add_dependency('rgeo-activerecord', '> 5.0', '< 7.0')
-  spec.add_dependency('mysql2', '> 0.4.0', '< 0.6')
+
+  spec.add_dependency('rgeo-activerecord', '>= 6.0', '< 7.0')
+  spec.add_dependency('mysql2', '>= 0.5.0', '< 0.6')
 end
